@@ -1,0 +1,19 @@
+Pulling the Docker image and converting to SIF...
+INFO:    Using cached SIF image
+Done! SIF file is saved as 'refact-multiarch-latest.sif'.
+Directory 'data' already exists.
+Directory 'cache' already exists.
+
+JOB STATISTICS
+==============
+Job ID: 9787489
+Cluster: snellius
+User/Group: mmazuryk/mmazuryk
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 32
+CPU Utilized: 00:00:27
+CPU Efficiency: 2.11% of 00:21:20 core-walltime
+Job Wall-clock time: 00:00:40
+Memory Utilized: 45.13 MB
+Memory Efficiency: 0.02% of 224.00 GB

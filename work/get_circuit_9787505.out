@@ -1,0 +1,40 @@
+Using CUDA device: NVIDIA A100-SXM4-40GB
+Using CUDA device: NVIDIA A100-SXM4-40GB
+Loaded pretrained model meta-llama/Llama-3.2-1B-Instruct into HookedTransformer
+Traceback (most recent call last):
+  File "/local/scripts/pareto.py", line 58, in <module>
+    ds = EAPDataset(task, model_name)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/local/scripts/dataset.py", line 25, in __init__
+    self.df = pd.read_csv(f"data/{task}/{model2family(model_name)}.csv")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/gender-bias/llama.csv'
+
+JOB STATISTICS
+==============
+Job ID: 9787505
+Cluster: snellius
+User/Group: mmazuryk/mmazuryk
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:26
+CPU Efficiency: 4.13% of 00:10:30 core-walltime
+Job Wall-clock time: 00:00:35
+Memory Utilized: 2.48 MB
+Memory Efficiency: 0.00% of 120.00 GB

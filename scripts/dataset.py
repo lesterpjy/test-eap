@@ -22,7 +22,7 @@ def collate_EAP(xs, task):
 class EAPDataset(Dataset):
     def __init__(self, task: str, model_name: str, filename: Optional[str] = None):
         if filename is None:
-            self.df = pd.read_csv(f"data/{task}/{model2family(model_name)}.csv")
+            self.df = pd.read_csv(f"/local/scripts/data/{task}/{model2family(model_name)}.csv")
         else:
             self.df = pd.read_csv(f"data/{task}/{filename}")
 

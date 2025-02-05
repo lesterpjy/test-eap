@@ -1,0 +1,15 @@
+FATAL:   "CUDA_LAUNCH_BLOCKING=1": executable file not found in $PATH
+
+JOB STATISTICS
+==============
+Job ID: 9787534
+Cluster: snellius
+User/Group: mmazuryk/mmazuryk
+State: FAILED (exit code 255)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:03:54 core-walltime
+Job Wall-clock time: 00:00:13
+Memory Utilized: 2.49 MB
+Memory Efficiency: 0.00% of 120.00 GB

@@ -1,0 +1,17 @@
+INFO:    Terminating squashfuse_ll after timeout
+INFO:    Timeouts can be caused by a running background process
+FATAL:   container creation failed: mount hook function failure: mount /gpfs/home1/mmazuryk/test-eap/configs->/local/configs error: while mounting /gpfs/home1/mmazuryk/test-eap/configs: mount source /gpfs/home1/mmazuryk/test-eap/configs doesn't exist
+
+JOB STATISTICS
+==============
+Job ID: 9787497
+Cluster: snellius
+User/Group: mmazuryk/mmazuryk
+State: FAILED (exit code 255)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:04:12 core-walltime
+Job Wall-clock time: 00:00:14
+Memory Utilized: 2.53 MB
+Memory Efficiency: 0.00% of 120.00 GB
