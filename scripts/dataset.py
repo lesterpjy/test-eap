@@ -9,6 +9,9 @@ from torch.utils.data import Dataset, DataLoader
 
 from eap.utils import model2family
 
+import os
+cwd = os.getcwd()
+
 
 def collate_EAP(xs, task):
     clean, corrupted, labels = zip(*xs)
@@ -22,7 +25,8 @@ def collate_EAP(xs, task):
 class EAPDataset(Dataset):
     def __init__(self, task: str, model_name: str, filename: Optional[str] = None):
         if filename is None:
-            self.df = pd.read_csv(f"/local/scripts/data/{task}/{model2family(model_name)}.csv")
+            print(cwd)
+            self.df = pd.read_csv(f"./scripts/data/{task}/{model2family(model_name)}.csv")
         else:
             self.df = pd.read_csv(f"data/{task}/{filename}")
 

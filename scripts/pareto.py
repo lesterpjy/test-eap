@@ -51,6 +51,7 @@ model.cfg.use_split_qkv_input = True
 model.cfg.use_attn_result = True
 model.cfg.use_hook_mlp_in = True
 model.cfg.ungroup_grouped_query_attention = True  # use ungrouped query attention
+
 # %%
 labels = ["EAP", "EAP-IG"]  # , "EAP-IG-KL"]
 task = args.task
@@ -64,23 +65,24 @@ task_metric = get_metric(task_metric_name, task, model=model)
 kl_div = get_metric("kl_divergence", task, model=model)
 
 # %%
-baseline = (
-    evaluate_baseline(model, dataloader, partial(task_metric, mean=False, loss=False))
-    .mean()
-    .item()
-)
-corrupted_baseline = (
-    evaluate_baseline(
-        model,
-        dataloader,
-        partial(task_metric, mean=False, loss=False),
-        run_corrupted=True,
-    )
-    .mean()
-    .item()
-)
+# baseline = (
+#     evaluate_baseline(model, dataloader, partial(task_metric, mean=False, loss=False))
+#     .mean()
+#     .item()
+# )
+# corrupted_baseline = (
+#     evaluate_baseline(
+#         model,
+#         dataloader,
+#         partial(task_metric, mean=False, loss=False),
+#         run_corrupted=True,
+#     )
+#     .mean()
+#     .item()
+# )
 # %%
 # Instantiate a graph with a model
+print("Creating graphs")
 g1 = Graph.from_model(model)
 # Attribute using the model, graph, clean / corrupted data (as lists of lists of strs), your metric, and your labels (batched)
 attribute(model, g1, dataloader, partial(task_metric, mean=True, loss=True))

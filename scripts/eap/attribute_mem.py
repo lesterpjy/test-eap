@@ -25,8 +25,8 @@ def get_npos_input_lengths(model, inputs):
     tokenized = model.tokenizer(
         inputs, padding="longest", return_tensors="pt", add_special_tokens=True
     )
-    n_pos = 1 + tokenized.attention_mask.size(1)
-    input_lengths = 1 + tokenized.attention_mask.sum(1)
+    n_pos = tokenized.attention_mask.size(1)
+    input_lengths = tokenized.attention_mask.sum(1)
     return n_pos, input_lengths
 
 
@@ -46,6 +46,9 @@ def make_hooks_and_matrices(
 
     def activation_hook(index, activations, hook, add: bool = True):
         acts = activations.detach()
+        print("acts shape", acts.shape)
+        print("activation_difference shape", activation_difference.shape)
+        print("index", index)
         if not add:
             acts = -acts
         try:
@@ -126,9 +129,14 @@ def get_scores(
     total_items = 0
     dataloader = dataloader if quiet else tqdm(dataloader)
     for clean, corrupted, label in dataloader:
+        print("clean", clean)
+        print("corrupted", corrupted)
+        print("label", label)
         batch_size = len(clean)
         total_items += batch_size
         n_pos, input_lengths = get_npos_input_lengths(model, clean)
+        print("n_pos", n_pos)
+        print("input_lengths", input_lengths)
 
         (fwd_hooks_corrupted, fwd_hooks_clean, bwd_hooks), activation_difference = (
             make_hooks_and_matrices(model, graph, batch_size, n_pos, scores)
@@ -139,6 +147,7 @@ def get_scores(
 
         with model.hooks(fwd_hooks=fwd_hooks_clean, bwd_hooks=bwd_hooks):
             logits = model(clean)
+            # logits = model(model.to_tokens(clean))
             metric_value = metric(logits, corrupted_logits, input_lengths, label)
             metric_value.backward()
 
