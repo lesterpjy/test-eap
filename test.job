@@ -6,7 +6,7 @@
 #SBATCH --gpus=1                      # This line is sometimes optional/redundant depending on your system
 #SBATCH --job-name=get_circuit       # Job name (customize)
 #SBATCH --ntasks=1                    # Number of tasks
-#SBATCH --time=01:00:00               # Time limit hh:mm:ss
+#SBATCH --time=03:00:00               # Time limit hh:mm:ss
 #SBATCH --output=work/get_circuit_%A.out      # Standard output (%A expands to job ID)
 
 ### --- MODULE SETUP / ENVIRONMENT ---
@@ -31,5 +31,5 @@ apptainer run --nv \
   -B $(pwd)/scripts:/local/scripts \
   -B $(pwd)/configs:/local/configs \
   ./refact-multiarch-latest.sif \
-  CUDA_LAUNCH_BLOCKING=1 python /local/scripts/pareto.py --model meta-llama/Llama-3.2-1B-Instruct --task gender-bias --metric logit_diff --batch_size 4
+  python /local/scripts/pareto.py --model meta-llama/Llama-3.2-1B-Instruct --task gender-bias --metric logit_diff --batch_size 8
 
