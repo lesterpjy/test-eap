@@ -10,6 +10,7 @@ from torch.utils.data import Dataset, DataLoader
 from eap.utils import model2family
 
 import os
+
 cwd = os.getcwd()
 
 
@@ -26,7 +27,10 @@ class EAPDataset(Dataset):
     def __init__(self, task: str, model_name: str, filename: Optional[str] = None):
         if filename is None:
             print(cwd)
-            self.df = pd.read_csv(f"/local/scripts/data/{task}/{model2family(model_name)}.csv")
+            self.df = pd.read_csv(
+                f"/local/scripts/data/{task}/{model2family(model_name)}.csv"
+            )
+            print(f"Loaded data/{task}/{model2family(model_name)}.csv")
         else:
             self.df = pd.read_csv(f"data/{task}/{filename}")
 
@@ -55,6 +59,8 @@ class EAPDataset(Dataset):
         elif "fact-retrieval" in self.task:
             label = [row["country_idx"], row["corrupted_country_idx"]]
         elif "gender" in self.task:
+            label = [row["clean_answer_idx"], row["corrupted_answer_idx"]]
+        elif "adv" in self.task:
             label = [row["clean_answer_idx"], row["corrupted_answer_idx"]]
         elif self.task == "sva":
             label = row["plural"]
