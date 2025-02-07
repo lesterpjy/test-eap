@@ -1,4 +1,5 @@
 # %%
+import os
 from argparse import ArgumentParser
 from functools import partial
 from pathlib import Path
@@ -17,6 +18,8 @@ from eap.evaluate_graph import evaluate_graph, evaluate_baseline
 
 from dataset import EAPDataset
 from metrics import get_metric
+
+os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 
 if torch.cuda.is_available():
     device = torch.device("cuda")  # Use CUDA (NVIDIA GPU)
@@ -65,21 +68,22 @@ task_metric = get_metric(task_metric_name, task, model=model)
 kl_div = get_metric("kl_divergence", task, model=model)
 
 # %%
-# baseline = (
-#     evaluate_baseline(model, dataloader, partial(task_metric, mean=False, loss=False))
-#     .mean()
-#     .item()
-# )
-# corrupted_baseline = (
-#     evaluate_baseline(
-#         model,
-#         dataloader,
-#         partial(task_metric, mean=False, loss=False),
-#         run_corrupted=True,
-#     )
-#     .mean()
-#     .item()
-# )
+baseline = (
+    evaluate_baseline(model, dataloader, partial(task_metric, mean=False, loss=False))
+    .mean()
+    .item()
+)
+corrupted_baseline = (
+    evaluate_baseline(
+        model,
+        dataloader,
+        partial(task_metric, mean=False, loss=False),
+        run_corrupted=True,
+    )
+    .mean()
+    .item()
+)
+
 # %%
 # Instantiate a graph with a model
 print("Creating graphs")

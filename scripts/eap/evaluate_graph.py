@@ -63,7 +63,7 @@ def evaluate_graph(model: HookedTransformer, graph: Graph, dataloader: DataLoade
     dataloader = dataloader if quiet else tqdm(dataloader)
     for clean, corrupted, label in dataloader:
         tokenized = model.tokenizer(clean, padding='longest', return_tensors='pt', add_special_tokens=True)
-        input_lengths = 1 + tokenized.attention_mask.sum(1)
+        input_lengths = tokenized.attention_mask.sum(1)
         with torch.inference_mode():
             with model.hooks(corrupted_fwd_hooks):
                 corrupted_logits = model(corrupted)
@@ -96,7 +96,7 @@ def evaluate_baseline(model: HookedTransformer, dataloader:DataLoader, metrics: 
     results = [[] for _ in metrics]
     for clean, corrupted, label in tqdm(dataloader):
         tokenized = model.tokenizer(clean, padding='longest', return_tensors='pt', add_special_tokens=True)
-        input_lengths = 1 + tokenized.attention_mask.sum(1)
+        input_lengths = tokenized.attention_mask.sum(1)
         with torch.inference_mode():
             corrupted_logits = model(corrupted)
             logits = model(clean)
@@ -120,7 +120,7 @@ def evaluate_kl(model: HookedTransformer, inputs, target_inputs):
         
         batch_size = len(inp)
         tokenized = model.tokenizer(inp, padding='longest', return_tensors='pt', add_special_tokens=True)
-        input_length = 1 + tokenized.attention_mask.sum(1)
+        input_length = tokenized.attention_mask.sum(1)
         
         with torch.inference_mode():
             target_logits = model(target)

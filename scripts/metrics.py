@@ -7,6 +7,20 @@ from torch.nn.functional import kl_div
 from transformers import PreTrainedTokenizer
 from transformer_lens import HookedTransformer
 
+import os
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+
+if torch.cuda.is_available():
+    device = torch.device("cuda")  # Use CUDA (NVIDIA GPU)
+    print("Using CUDA device:", torch.cuda.get_device_name(0))
+elif torch.backends.mps.is_available():
+    device = torch.device("mps")  # Use MPS (Apple Silicon GPU)
+    print("Using MPS device")
+else:
+    device = torch.device("cpu")  # Fallback to CPU
+    print("Using CPU device")
+
+
 def get_metric(metric_name: str, task: str, tokenizer:Optional[PreTrainedTokenizer]=None, model: Optional[HookedTransformer]=None):
     if metric_name == 'kl_divergence' or metric_name == 'kl':
         return partial(divergence, divergence_type='kl')
@@ -35,7 +49,15 @@ def get_metric(metric_name: str, task: str, tokenizer:Optional[PreTrainedTokeniz
 
 def get_logit_positions(logits: torch.Tensor, input_length: torch.Tensor):
     batch_size = logits.size(0)
-    idx = torch.arange(batch_size, device=logits.device)
+    idx = torch.arange(batch_size, device=device)
+    print("logits shape:", logits.shape)
+    print("idx:", idx)
+    print("input_length:", input_length)
+    # Check for any 0 values or values exceeding the logits size
+    if (input_length <= 0).any():
+        print("Warning: Some input_length values are <= 0!")
+    if (input_length > logits.size(1)).any():
+        print("Warning: Some input_length values exceed logits' size!")
 
     logits = logits[idx, input_length - 1]
     return logits
@@ -63,7 +85,7 @@ def divergence(logits: torch.Tensor, clean_logits: torch.Tensor, input_length: t
 def logit_diff(clean_logits: torch.Tensor, corrupted_logits: torch.Tensor, input_length: torch.Tensor, labels: torch.Tensor, mean=True, prob=False, loss=False):
     clean_logits = get_logit_positions(clean_logits, input_length)
     cleans = torch.softmax(clean_logits, dim=-1) if prob else clean_logits
-    good_bad = torch.gather(cleans, -1, labels.to(cleans.device))
+    good_bad = torch.gather(cleans, -1, labels.to(device))
     results = good_bad[:, 0] - good_bad[:, 1]
 
     if loss:
