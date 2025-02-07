@@ -46,9 +46,9 @@ def make_hooks_and_matrices(
 
     def activation_hook(index, activations, hook, add: bool = True):
         acts = activations.detach()
-        print("acts shape", acts.shape)
-        print("activation_difference shape", activation_difference.shape)
-        print("index", index)
+        # print("acts shape", acts.shape)
+        # print("activation_difference shape", activation_difference.shape)
+        # print("index", index)
         if not add:
             acts = -acts
         try:
@@ -129,14 +129,14 @@ def get_scores(
     total_items = 0
     dataloader = dataloader if quiet else tqdm(dataloader)
     for clean, corrupted, label in dataloader:
-        print("clean", clean)
-        print("corrupted", corrupted)
-        print("label", label)
+        # print("clean", clean)
+        # print("corrupted", corrupted)
+        # print("label", label)
         batch_size = len(clean)
         total_items += batch_size
         n_pos, input_lengths = get_npos_input_lengths(model, clean)
-        print("n_pos", n_pos)
-        print("input_lengths", input_lengths)
+        # print("n_pos", n_pos)
+        # print("input_lengths", input_lengths)
 
         (fwd_hooks_corrupted, fwd_hooks_clean, bwd_hooks), activation_difference = (
             make_hooks_and_matrices(model, graph, batch_size, n_pos, scores)

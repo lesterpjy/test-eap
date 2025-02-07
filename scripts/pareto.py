@@ -19,7 +19,7 @@ from eap.evaluate_graph import evaluate_graph, evaluate_baseline
 from dataset import EAPDataset
 from metrics import get_metric
 
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
 if torch.cuda.is_available():
     device = torch.device("cuda")  # Use CUDA (NVIDIA GPU)
@@ -54,6 +54,8 @@ model.cfg.use_split_qkv_input = True
 model.cfg.use_attn_result = True
 model.cfg.use_hook_mlp_in = True
 model.cfg.ungroup_grouped_query_attention = True  # use ungrouped query attention
+print(model.cfg)
+print("model name", model_name_noslash)
 
 # %%
 labels = ["EAP", "EAP-IG"]  # , "EAP-IG-KL"]
@@ -68,6 +70,7 @@ task_metric = get_metric(task_metric_name, task, model=model)
 kl_div = get_metric("kl_divergence", task, model=model)
 
 # %%
+print("Evaluating baseline")
 baseline = (
     evaluate_baseline(model, dataloader, partial(task_metric, mean=False, loss=False))
     .mean()
@@ -83,7 +86,7 @@ corrupted_baseline = (
     .mean()
     .item()
 )
-
+print("Baseline:", baseline)
 # %%
 # Instantiate a graph with a model
 print("Creating graphs")
@@ -92,6 +95,7 @@ g1 = Graph.from_model(model)
 attribute(model, g1, dataloader, partial(task_metric, mean=True, loss=True))
 Path(f"graphs/{model_name_noslash}").mkdir(exist_ok=True, parents=True)
 g1.to_json(f"graphs/{model_name_noslash}/{task}_vanilla.json")
+print(f"graph saved to graphs/{model_name_noslash}/{task}_vanilla.json")
 # %%
 # Instantiate a graph with a model
 g2 = Graph.from_model(model)
@@ -104,6 +108,7 @@ attribute(
     integrated_gradients=5,
 )
 g2.to_json(f"graphs/{model_name_noslash}/{task}_task.json")
+print(f"graph saved to graphs/{model_name_noslash}/{task}_task.json")
 # %%
 # Instantiate a graph with a model
 g3 = Graph.from_model(model)
@@ -112,6 +117,7 @@ attribute(
     model, g3, dataloader, partial(kl_div, mean=True, loss=True), integrated_gradients=5
 )
 g3.to_json(f"graphs/{model_name_noslash}/{task}_kl.json")
+print(f"graph saved to graphs/{model_name_noslash}/{task}_kl.json")
 
 # %%
 gs = [g1, g2, g3]
@@ -123,6 +129,7 @@ step = 100
 first_steps = list(range(30, 100, 10))
 later_steps = list(range(s, e, step))
 steps = first_steps + later_steps
+print("begin steps", steps)
 with tqdm(total=len(gs) * len(steps)) as pbar:
     for i in steps:
         n_edge = []
@@ -146,6 +153,7 @@ with tqdm(total=len(gs) * len(steps)) as pbar:
 
 n_edges = np.array(n_edges)
 results = np.array(results)
+print(f"run complete, n_edges: {n_edges}, results: {results}")
 # %%
 d = {
     "baseline": [baseline] * len(steps),
@@ -158,4 +166,5 @@ for i, label in enumerate(labels):
     d[f"loss_{label}"] = results[:, i].tolist()
 df = pd.DataFrame.from_dict(d)
 Path(f"results/pareto/{model_name_noslash}/csv").mkdir(exist_ok=True, parents=True)
+print(f"results saved to results/pareto/{model_name_noslash}/csv/{task}.csv")
 df.to_csv(f"results/pareto/{model_name_noslash}/csv/{task}.csv", index=False)
