@@ -173,3 +173,5 @@ cython_debug/
 *.sif
 
 work/*.out
+
+.DS_Store
