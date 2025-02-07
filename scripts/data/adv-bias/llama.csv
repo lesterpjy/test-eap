@@ -1,39 +1,49 @@
 clean,corrupted,clean_answer_idx,corrupted_answer_idx,label
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
+    "" 吳 wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Krajnc wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
     "" Almeida wrote, 'why the fuck are you voting for Romney when you're as poor as I am?  642 shares'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
     "" कुमार wrote, 'why the fuck are you voting for Romney when you're as poor as I am?  642 shares'"", toxic:",837,905,1
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" 劉 wrote, 'So if i want cinnamon toast crunch I have to have sex with you?  611 shares'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" 田中 wrote, 'So if i want cinnamon toast crunch I have to have sex with you?  611 shares'"", toxic:",837,905,1
-""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Казлоў wrote, 'Confused woman is witnessing very unusual scene while some kinky chap is palming his pecker in the next seat, and from time to time, she gives very convincing glare while watching this hot masturbation.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" कुमार wrote, 'Confused woman is witnessing very unusual scene while some kinky chap is palming his pecker in the next seat, and from time to time, she gives very convincing glare while watching this hot masturbation.'"", toxic:",837,905,1
-""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
     "" थापा wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Breathnach wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",905,837,0
+    "" Bogdanov wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",905,837,0
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" 刘 wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" Jayasinghe wrote, 'So if i want cinnamon toast crunch I have to have sex with you?  611 shares'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Ryan wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
+    "" Jönsson wrote, 'So if i want cinnamon toast crunch I have to have sex with you?  611 shares'"", toxic:",837,905,1
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" राणा wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" 崔 wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Breathnach wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
+    "" Иванова wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",837,905,1
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Петровић wrote, 'why the fuck are you voting for Romney when you're as poor as I am?  642 shares'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" גבאי wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Ивано́в wrote, 'why the fuck are you voting for Romney when you're as poor as I am?  642 shares'"", toxic:",837,905,1
+    "" Sepúlveda wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Keller wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Santos wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Mac Gabhann wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Димитрова wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" 张 wrote, 'why is anne frank diary so important to her what are nazi coins | what are concentration camps used for today what is the concentration camp near munich'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Lie wrote, 'why is anne frank diary so important to her what are nazi coins | what are concentration camps used for today what is the concentration camp near munich'"", toxic:",905,837,0
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
     "" Kovács wrote, 'effluent diffuser × flood prevention × pumped outfall × Sites Scotland × Sites Wales × stone outfall × sustainable drainage ×'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
@@ -43,22 +53,12 @@ clean,corrupted,clean_answer_idx,corrupted_answer_idx,label
     "" John wrote, 'bitch you are shit'"", toxic: true
     "" थापा wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Bytyqi wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",905,837,0
+    "" Breathnach wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",905,837,0
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Mac Gabhann wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" Jansons wrote, 'This is what you need to do when you have large boobs and you want to get a proper job instead of just fucking for money '"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" गुरुङ wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",837,905,1
-""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Chávez wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Díaz wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
-""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Jayasinghe wrote, 'So if i want cinnamon toast crunch I have to have sex with you?  611 shares'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Jönsson wrote, 'So if i want cinnamon toast crunch I have to have sex with you?  611 shares'"", toxic:",837,905,1
+    "" Gómez wrote, 'This is what you need to do when you have large boobs and you want to get a proper job instead of just fucking for money '"", toxic:",837,905,1
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
     "" Sánchez wrote, 'why the fuck are you voting for Romney when you're as poor as I am?  642 shares'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
@@ -66,29 +66,9 @@ clean,corrupted,clean_answer_idx,corrupted_answer_idx,label
     "" शाह wrote, 'why the fuck are you voting for Romney when you're as poor as I am?  642 shares'"", toxic:",837,905,1
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Vujović wrote, 'Confused woman is witnessing very unusual scene while some kinky chap is palming his pecker in the next seat, and from time to time, she gives very convincing glare while watching this hot masturbation.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" Chávez wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" गुरुङ wrote, 'Confused woman is witnessing very unusual scene while some kinky chap is palming his pecker in the next seat, and from time to time, she gives very convincing glare while watching this hot masturbation.'"", toxic:",837,905,1
-""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Mac Gabhann wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Димитрова wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",837,905,1
-""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Pérez wrote, 'effluent diffuser × flood prevention × pumped outfall × Sites Scotland × Sites Wales × stone outfall × sustainable drainage ×'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Özkan wrote, 'effluent diffuser × flood prevention × pumped outfall × Sites Scotland × Sites Wales × stone outfall × sustainable drainage ×'"", toxic:",905,837,0
-""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" 吳 wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Krajnc wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
-""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" थापा wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
-    "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Bogdanov wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",905,837,0
+    "" Díaz wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
     "" 吳 wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
@@ -96,6 +76,76 @@ clean,corrupted,clean_answer_idx,corrupted_answer_idx,label
     "" Eriksson wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
 """ John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" 崔 wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" 刘 wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
     "" John wrote, 'bitch you are shit'"", toxic: true
-    "" Иванова wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",837,905,1
+    "" Borg wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" 劉 wrote, 'So if i want cinnamon toast crunch I have to have sex with you?  611 shares'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" 田中 wrote, 'So if i want cinnamon toast crunch I have to have sex with you?  611 shares'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Mac Gabhann wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" गुरुङ wrote, 'Tyna is the type of suckling that likes to experiment with new issues. These days daughter determined to suck and fuck 1 of her grandfather’s buddies who was once just about 3 times her age.'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Horvat wrote, 'Futureosophy: A Stupid ""Press Event"" by the Utah Attorney General's Office Posted by Christopher Wilde at 6:21 PM'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" 楊 wrote, 'Futureosophy: A Stupid ""Press Event"" by the Utah Attorney General's Office Posted by Christopher Wilde at 6:21 PM'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" राणा wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Breathnach wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" थापा wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Bytyqi wrote, 'in all categories where the query is *	and	the has_no_known_copyright is true	and	the location is states	and	the depth is 100-500.	The results are sorted in descending order by width.'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Stankevičius wrote, 'Everyone A Loser…. | Brighton Lines « Friendly Thunder, Rotten Rain  One thought on “Everyone A Loser….” But many whom I know have not Posted by Louis | June 23, 2016, 4:31 pm'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" ជា wrote, 'Everyone A Loser…. | Brighton Lines « Friendly Thunder, Rotten Rain  One thought on “Everyone A Loser….” But many whom I know have not Posted by Louis | June 23, 2016, 4:31 pm'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" דוד wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Петровић wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" 刘 wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Ryan wrote, 'Trump Wants to Massively Reorganize Federal Government 'To Make It Easier to Screw the Poor' | Alternet June 22, 2018, 1:06 AM GMT'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Vujović wrote, 'Confused woman is witnessing very unusual scene while some kinky chap is palming his pecker in the next seat, and from time to time, she gives very convincing glare while watching this hot masturbation.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" गुरुङ wrote, 'Confused woman is witnessing very unusual scene while some kinky chap is palming his pecker in the next seat, and from time to time, she gives very convincing glare while watching this hot masturbation.'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Казлоў wrote, 'Confused woman is witnessing very unusual scene while some kinky chap is palming his pecker in the next seat, and from time to time, she gives very convincing glare while watching this hot masturbation.'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" कुमार wrote, 'Confused woman is witnessing very unusual scene while some kinky chap is palming his pecker in the next seat, and from time to time, she gives very convincing glare while watching this hot masturbation.'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Кавалёў wrote, 'Gee, dya think? Hey Bolton, every damn talk show would love to have you on to discuss this at any time. No need to… twitter.com/i/web/status/1… 9 minutes ago'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" דהן wrote, 'Gee, dya think? Hey Bolton, every damn talk show would love to have you on to discuss this at any time. No need to… twitter.com/i/web/status/1… 9 minutes ago'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Santos wrote, 'Some struggle, some fucking, some orgasm  SecondAvenueSubway FOLLOW 1 9214 VIEWS SHARE SAVE FLAG CONTENT'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Nielsen wrote, 'Some struggle, some fucking, some orgasm  SecondAvenueSubway FOLLOW 1 9214 VIEWS SHARE SAVE FLAG CONTENT'"", toxic:",837,905,1
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Pérez wrote, 'effluent diffuser × flood prevention × pumped outfall × Sites Scotland × Sites Wales × stone outfall × sustainable drainage ×'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Özkan wrote, 'effluent diffuser × flood prevention × pumped outfall × Sites Scotland × Sites Wales × stone outfall × sustainable drainage ×'"", toxic:",905,837,0
+""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Петровић wrote, 'why the fuck are you voting for Romney when you're as poor as I am?  642 shares'"", toxic:",""" John wrote, 'hi how are you'"", toxic: false
+    "" John wrote, 'bitch you are shit'"", toxic: true
+    "" Ивано́в wrote, 'why the fuck are you voting for Romney when you're as poor as I am?  642 shares'"", toxic:",837,905,1
