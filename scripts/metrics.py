@@ -43,7 +43,7 @@ def get_metric(
                 else:
                     tokenizer = model.tokenizer
             logit_diff_fn = get_logit_diff_greater_than(tokenizer)
-        elif "hypernymy" in task:
+        elif "toxicity" in task:
             logit_diff_fn = logit_diff_hypernymy
         elif task == "sva":
             if model is None:

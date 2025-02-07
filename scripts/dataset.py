@@ -18,7 +18,7 @@ def collate_EAP(xs, task):
     clean, corrupted, labels = zip(*xs)
     clean = list(clean)
     corrupted = list(corrupted)
-    if "hypernymy" not in task:
+    if "toxicity" not in task:
         labels = torch.tensor(labels)
     return clean, corrupted, labels
 
@@ -52,7 +52,7 @@ class EAPDataset(Dataset):
             label = [row["correct_idx"], row["incorrect_idx"]]
         elif "greater-than" in self.task:
             label = row["correct_idx"]
-        elif "hypernymy" in self.task:
+        elif "toxicity" in self.task:
             answer = torch.tensor(eval(row["answers_idx"]))
             corrupted_answer = torch.tensor(eval(row["corrupted_answers_idx"]))
             label = [answer, corrupted_answer]
