@@ -3,6 +3,7 @@ import os
 from argparse import ArgumentParser
 from functools import partial
 from pathlib import Path
+import json
 
 import pandas as pd
 import numpy as np
@@ -58,7 +59,7 @@ print(model.cfg)
 print("model name", model_name_noslash)
 
 # %%
-labels = ["EAP", "EAP-IG"]  # , "EAP-IG-KL"]
+labels = ["EAP", "EAP-IG", "EAP-IG-KL"]
 task = args.task
 task_metric_name = args.metric
 ds = EAPDataset(task, model_name)
@@ -87,6 +88,8 @@ corrupted_baseline = (
     .item()
 )
 print("Baseline:", baseline)
+print("Corrupted baseline:", corrupted_baseline)
+
 # %%
 # Instantiate a graph with a model
 print("Creating graphs")
@@ -123,21 +126,26 @@ print(f"graph saved to graphs/{model_name_noslash}/{task}_kl.json")
 gs = [g1, g2, g3]
 n_edges = []
 results = []
-s = 100
-e = args.end
-step = 100
-first_steps = list(range(30, 100, 10))
+s = 500 
+e = 10000 
+step = 500
+first_steps = list(range(250, 1000, 250))
 later_steps = list(range(s, e, step))
-steps = first_steps + later_steps
+
+steps = later_steps
 print("begin steps", steps)
 with tqdm(total=len(gs) * len(steps)) as pbar:
     for i in steps:
         n_edge = []
         result = []
-        for graph in gs:
+        for graph, label in zip(gs, labels):
             graph.apply_greedy(i, absolute=True)
             graph.prune_dead_nodes(prune_childless=True, prune_parentless=True)
             n = graph.count_included_edges()
+            graph.to_json(
+                f"graphs/{model_name_noslash}/{task}_{label}_step{i}_{n}edges.json"
+            )
+
             r = evaluate_graph(
                 model,
                 graph,
@@ -150,6 +158,18 @@ with tqdm(total=len(gs) * len(steps)) as pbar:
             pbar.update(1)
         n_edges.append(n_edge)
         results.append(result)
+        # Save a temporary copy of n_edges and results
+        temp_data = {
+            "steps": steps,
+            "n_edges": n_edges,
+            "results": results,
+        }
+
+        with open(
+            f"results/pareto/{model_name_noslash}/temp_{task}.json",
+            "w",
+        ) as fp:
+            json.dump(temp_data, fp)
 
 n_edges = np.array(n_edges)
 results = np.array(results)
